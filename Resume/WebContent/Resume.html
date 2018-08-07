@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Resume</title>
+</head>
+<body>
+<h1>Resume</h1>
+<hr/>
+<form action="ResumeServelet" method="get">
+<table>
+<tr>
+<td>First name: <input type="text" name="fname" /></td>
+</tr>
+<tr>
+<td>Last name: <input type="text" name="lname" /></td>
+<tr>
+<td>Date of birth: <input type="date" name="dob" /></td>
+</tr>
+<tr>
+<td>Gender: <input type="radio" name="gender" value="Male" >Male
+			<input type="radio" name="gender" value="Female" >Female</td>
+</tr>
+<tr>
+<td>Address: <textarea rows="5" cols="50" name="address"></textarea> </td>
+</tr>
+<tr>
+<td>Image: <input type="file" name="imageupload" accept="image/*"></td>
+</tr>
+<tr>
+<td>Highest Qualification: <select name="qualification">
+<option value="Graduation" selected>Graduation</option>
+<option value="Post Graduation" >Post Graduation</option>
+<option value="Intermediate" >Intermediate</option>
+<option value="Highschool" selected>High School</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Email <input type="email" name="email" ></td>
+</tr>
+<tr>
+<td>Website: <input type="url" name="website" ></td>
+</tr>
+<tr>
+<td>Contact No.: <input type="number" name="cno" pattern="[7,8,9][0-9]{9}"></td>
+</tr>
+<tr>
+<td>Skills: <input type="checkbox" name="skills">C
+<input type="checkbox" name="skills">C++
+<input type="checkbox" name="skills">Java
+<input type="checkbox" name="skills">.Net
+<input type="checkbox" name="skills">HTML
+</td>
+</tr>
+<tr>
+<td>Hobbies: <input type="checkbox" name="hobbies" value="hobbies">Singing
+<input type="checkbox" name="hobbies" value="hobbies">Dancing
+<input type="checkbox" name="hobbies" value="hobbies">Cricket
+<input type="checkbox" name="hobbies" value="hobbies">Movies
+<input type="checkbox" name="hobbies" value="hobbies">Surfing Internet
+</td>
+</tr>
+<tr>
+<td>
+<input type="reset" name="reset" value="Reset" >
+<input type="submit" name="submit" value="Submit" >
+</table> 
+</form>
+</body>
+</html>
